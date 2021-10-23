@@ -1,0 +1,51 @@
+/* TABLET */
+@media only screen and (min-width: 800px) {
+   /* GRID */
+   .grid {
+      padding: 6rem;
+      grid-template-rows: repeat(2, minmax(20rem, auto));
+   }
+
+   .front {
+      margin-top: -4rem;
+      margin-left: 8rem;
+      grid-row: -2;
+   }
+
+   .subgrid {
+      margin-right: 3rem;
+      column-gap: 2rem;
+      grid-template-columns: repeat(2, minmax(100px, 1fr));
+      grid-auto-rows: minmax(100px, 300px);
+      justify-content: center;
+   }
+
+   .grid__orange-bar {
+      width: 50%;
+      margin-left: 4rem;
+      margin-bottom: 4rem;
+   }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1024px) {
+   /* GRID */
+   .grid {
+      padding: 6rem;
+      grid-template-rows: repeat(2, minmax(20rem, auto));
+   }
+
+   .front {
+      margin-left: 50%;
+   }
+
+   .subgrid {
+      grid-template-columns: repeat(3, minmax(200px, 300px));
+   }
+
+   .grid__orange-bar {
+      width: 30rem;
+      margin-left: 20%;
+      margin-bottom: 30rem;
+   }
+}

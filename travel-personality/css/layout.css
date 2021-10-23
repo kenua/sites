@@ -1,0 +1,78 @@
+.heading {
+   font-size: 3rem;
+   font-weight: 900;
+}
+
+.text {
+   font-size: 1.6rem;
+   line-height: 2;
+}
+
+.text--quoted {
+   margin-left: 4rem;
+}
+
+.text--quoted:before {
+   content: '';
+   background-image: url('../../images/quote.png');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 110px;
+   height: 200px;
+   font-size: 3rem;
+   display: block;
+   transform: translateX(-4rem);
+}
+
+/* grid */
+.grid {
+   padding: 4rem;
+   display: grid;
+   row-gap: 2rem;
+   grid-template-columns: 1fr;
+   grid-template-rows: auto;
+}
+
+.black-line {
+   background-color: #202020;
+   height: 16rem;
+   margin-right: 4rem;
+   margin-left: -4rem;
+   grid-column: 1 / -1;
+   grid-row: 1;
+}
+
+.image {
+   background-color: #afafaf;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.image-1 {
+   background-image: url('../../images/mountain1.png');
+   background-position: top center;
+   filter: hue-rotate(324deg);
+   height: 25rem;
+   margin-top: 4rem;
+   grid-column: 1;
+   grid-row: 1;
+}
+
+.image-2 {
+   background-image: url('../../images/image7.jpg');
+   background-position: bottom center;
+   height: 50rem;
+   grid-column: 1;
+   grid-row: 2;
+}
+
+.description {
+   min-height: 30rem;
+   padding: 6rem 0;
+   grid-column: 1;
+   grid-row: 3;
+   display: grid;
+   align-content: space-between;
+}
